@@ -1,14 +1,9 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu"
+import NavigationMenuDemo from "@/components/NavigationMenuDemo"
 import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 
 export function Header() {
   return (
-    <header className="border-b border-gray-200">
+    <header className="border-b border-gray-200 relative">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo Placeholder */}
         <div className="flex items-center space-x-2">
@@ -17,22 +12,7 @@ export function Header() {
         </div>
 
         {/* Navigation Menu */}
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#home">Home</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#about">About</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#services">Services</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#contact">Contact</NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+        <NavigationMenuDemo />
 
         {/* Theme Switcher */}
         <ThemeSwitcher />

@@ -1,10 +1,19 @@
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200">
-      <div className="container mx-auto px-4 py-8">
-        <div className="text-center">
-          {/* Placeholder for footer content */}
-          <p>&copy; 2023 Your Company. All rights reserved.</p>
+    <footer className="w-full bg-gradient-to-b from-muted to-background text-foreground">
+      <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center">
+        <div className="flex items-center space-x-3 mb-6">
+          {/* Logo Placeholder */}
+          <div className="w-11 h-11 bg-primary/20 rounded"></div>
+        </div>
+        <p className="text-center max-w-xl text-sm font-normal leading-relaxed">
+          Empowering creators worldwide with the most advanced AI content creation tools. Transform your ideas
+          into reality.
+        </p>
+      </div>
+      <div className="border-t border-border">
+        <div className="max-w-7xl mx-auto px-6 py-6 text-center text-sm font-normal text-muted-foreground">
+          <a href="https://prebuiltui.com">prebuiltui</a> ©2025. All rights reserved.
         </div>
       </div>
     </footer>
