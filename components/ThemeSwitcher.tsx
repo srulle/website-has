@@ -26,6 +26,22 @@ const themeConfig = {
     modern: {
       light: "modern",
       dark: "modern-dark"
+    },
+    claude: {
+      light: "claude",
+      dark: "claude-dark"
+    },
+    graphite: {
+      light: "graphite",
+      dark: "graphite-dark"
+    },
+    caffeine: {
+      light: "caffeine",
+      dark: "caffeine-dark"
+    },
+    "ocean-breeze": {
+      light: "ocean-breeze",
+      dark: "ocean-breeze-dark"
     }
   } as const,
   modes: ["light", "dark"] as const
